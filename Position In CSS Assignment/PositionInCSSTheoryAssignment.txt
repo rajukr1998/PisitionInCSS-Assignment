@@ -1,0 +1,37 @@
+Task - 2
+Ans:-
+* Absolute positioning is a CSS property that allows you to position an element relative to its nearest positioned ancestor or the viewport (the browser window).
+
+* When you set an element's position to "absolute," it is taken out of the normal document flow. This means that it doesn't affect the positioning of other elements on the page.
+
+* You can use properties like top, right, bottom, and left to specify how far the element should be positioned from the edges of its nearest positioned ancestor or the viewport.
+
+* If no ancestor element is positioned (i.e., it has a position property other than the default "static"), the element with absolute positioning will be positioned relative to the viewport.
+
+* Relative positioning is a CSS property that allows you to position an element relative to its normal position in the document flow.
+
+* When you set an element's position to "relative," it remains in the normal document flow, and its position can be adjusted using properties like top, right, bottom, and left. These properties are used to specify an offset from the element's normal position.
+
+* Relative positioning is often used when you want to fine-tune the position of an element without taking it completely out of the document flow.
+
+Tast - 5
+Ans.
+In CSS (Cascading Style Sheets), the `z-index` property is used to control the stacking order of elements within a web page. It specifies the relative depth or "z-axis" position of an element within the stacking context. Stacking context is essentially the three-dimensional space in which elements are positioned on a web page.
+
+Here are the key points to understand about the `z-index` property:
+
+1. Stacking Context: The `z-index` property only applies to elements within a stacking context. A stacking context is created by an element under certain conditions, such as having a `position` value of `relative`, `absolute`, or `fixed`, or having a `transform` property applied. Stacking contexts can also be created by elements with `opacity` values less than 1, and a few other CSS properties.
+
+2. Stacking Order: Elements within the same stacking context are stacked on top of each other based on their `z-index` values. The element with the highest `z-index` value is placed on top, and the one with the lowest value is at the bottom.
+
+3. Integer Values: The `z-index` property accepts integer values, which can be positive, negative, or zero. Positive values place an element higher in the stacking order, while negative values move it lower. Elements with the same `z-index` value are stacked in the order they appear in the HTML source.
+
+4. Inherited Values: By default, most elements have a `z-index` value of `auto`, which means they inherit the stacking order from their parent. If an element is a child of an element with a specific `z-index`, it will generally be stacked above other children with lower `z-index` values, even if they have their own `z-index` values set to `auto`.
+
+5. Stacking Order Rules: When multiple stacking contexts overlap, the stacking order follows these rules:
+   - Elements in different stacking contexts do not affect each other's stacking order.
+   - Elements within the same stacking context follow the `z-index` value rules.
+   - If a child has a higher `z-index` value than its parent, it can be stacked above its parent but still below other elements in different stacking contexts.
+
+6. Painting Order: The `z-index` property affects the painting order, determining which elements are rendered on top. It doesn't change the flow of the document or influence layout.
+

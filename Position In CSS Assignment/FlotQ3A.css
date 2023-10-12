@@ -1,0 +1,18 @@
+#container {
+    margin: 0px;
+    padding: 0px;
+    background-color: #c5acac;
+    border: 2px solid black;
+}
+
+.left-container {
+    position: realtive;
+    padding-left: 50px;
+    width: 700px;
+    
+}
+.right-container {
+    position: absolute;
+    left: 850px;
+    top: 50px;
+}

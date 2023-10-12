@@ -1,0 +1,30 @@
+.box {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.red {
+    background-color: red;
+    z-index: 2; /* Red box has the highest z-index */
+    top: 20px;
+    left: 20px;
+}
+
+.blue {
+    background-color: blue;
+    z-index: 1; /* Blue box has a middle z-index */
+    top: 60px;
+    left: 60px;
+}
+
+.green {
+    background-color: green;
+    z-index: 3; /* Green box has the lowest z-index */
+    top: 100px;
+    left: 100px;
+}
